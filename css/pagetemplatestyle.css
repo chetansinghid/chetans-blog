@@ -1,0 +1,114 @@
+/* page basic layout styles */
+
+/* mobile-first styles */
+
+/* custom fonts used in site */
+@font-face {
+  font-family: ContentFont;
+  src: url(../resources/fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: HeaderFont;
+  src: url(../resources/fonts/OleoScript-Bold.ttf);
+  font-weight: bold;
+}
+/* general styles for body content */
+body {
+font-family: ContentFont;
+margin: 0;
+}
+/* header styles */
+header {
+font-weight: 400;
+line-height: 1.1;
+font-family: HeaderFont;
+color: #fff;
+text-align: center;
+background-color: black;
+padding: 1em 2em;
+}
+/* profile links styling */
+#profile_links {
+clear: both;
+text-align: center;
+}
+
+#profile_links ul {
+list-style: none;
+padding: 0em 2em;
+}
+
+#profile_links ul li {
+display: inline;
+padding: 0em 1em;
+margin: auto;
+}
+/* navigation bar styling */
+#navigation_links {
+clear: both;
+text-align: center;
+}
+
+#navigation_links ul {
+list-style: none;
+padding: 0em 1em;
+}
+
+#navigation_links ul li {
+border: 0.1em solid black;
+display: block;
+padding: 1em;
+margin: 0.2em 0em;
+}
+
+#navigation_links a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+letter-spacing: 0.1em;
+}
+/* footer styling */
+footer {
+font-family: HeaderFont;
+font-size: 16px;
+line-height: 1.58;
+text-align: center;
+background-color: black;
+color: white;
+padding: 0.5em 1em;
+font-size: small;
+}
+/* media query for desktop site */
+@media only screen and (min-width: 966px) {
+  /* made header sticky */
+  #stickyheader {
+    position: sticky;
+    top: 0;
+  }
+  /* changed header style */
+  header {
+  font-size: x-large;
+  padding: 0.5em 1em;
+  }
+  /* changed nav bar style */
+  #navigation_links {
+  text-align: center;
+  border-bottom: 0.1em dashed black;
+  border-top: 0.1em dashed black;
+  }
+  /* changed nav bar links style */
+  #navigation_links ul {
+  padding : 0em 1em;
+  list-style: none;
+  }
+  
+  #navigation_links ul li {
+  display: inline;
+  padding: 0em 2em;
+  border: none;
+  }
+  
+  #navigation_links a {
+  letter-spacing: 0em;
+  }
+}
