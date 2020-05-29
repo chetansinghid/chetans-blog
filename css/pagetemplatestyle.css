@@ -32,6 +32,7 @@ display: none;
 body {
 font-family: ContentFont;
 margin: 0;
+align-content: center;
 }
 /* header styles */
 header {
@@ -134,6 +135,39 @@ font-size: small;
   opacity: 40%;
   padding: 0.5em;
 }
+/* style for buttons on site */
+.button {
+  margin: 0.5em;
+}
+.button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: black;
+  padding: 0.5em;
+}
+/* styling for main section */
+.main_content {
+  padding: 1em;
+  box-sizing: border-box;
+}
+/* styling for aside section */
+.aside_content {
+  padding: 1em;
+  box-sizing: border-box;
+  font-size: small;
+  line-height: 1.4em;
+}
+
+.aside_content ul {
+  list-style: square;
+}
+
+.aside_content a {
+  color: black;
+  font-weight: bolder;
+}
+
 /* media query for desktop site */
 @media only screen and (min-width: 966px) {
   .mobile {

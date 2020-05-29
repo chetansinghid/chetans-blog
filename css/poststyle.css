@@ -1,3 +1,5 @@
+/* styles for blog posts in site */
+
 .post {
   border-right: 0.5em solid lightgray;
   border-bottom: 0.5em solid lightgray;
@@ -13,20 +15,15 @@
   align-content: center;
   max-width: 100%;
   padding: 0.5em;
-  border: 0.1em dashed black;
 }
 
 .post_content {
   padding: 0.5em;
 }
 
-.read_more {
-  margin: 0.5em;
-}
-.read_more a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  background-color: black;
-  padding: 0.5em;
+/* border added for the images for larger width screens */
+@media only screen and (min-width : 385px) {
+  .header img {
+    border: 0.1em dashed black;
+  }
 }

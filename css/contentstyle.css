@@ -1,1 +1,47 @@
+/* styles for other pages */
+.mypic {
+  text-align: center;
+}
 
+.mypic img {
+  height: 15em;
+  width: 15em;
+  border-radius: 50%;
+  border: 0.5em solid lightgray
+}
+
+.main_content {
+  max-width: 100%;
+}
+/* table styles */
+.main_content table {
+  table-layout: auto;
+  max-width: 30em;
+  padding: 0.5em;
+  margin: 0.5em auto;
+}
+
+.main_content tr, td {
+  padding: 0.5em;
+  text-align: center;
+  white-space: nowrap;
+}
+/* style for first row */
+.main_content tr:first-child {
+  background-color: lightgray;
+}
+
+/* style changes for large screen sizes */
+@media only screen and (min-width: 966px) {
+  .aside_content {
+    float: left;
+    clear: none;
+    width: 30%;
+    border-right: 0.1em solid lightgray;
+  }
+  .main_content {
+    float: right;
+    clear: none;
+    width: 70%;
+  }
+}

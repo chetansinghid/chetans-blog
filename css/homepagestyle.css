@@ -1,15 +1,6 @@
-.main_content {
-  padding: 1em;
-  box-sizing: border-box;
-}
+/* home page style sheet */
 
-.aside_content {
-  padding: 1em;
-  box-sizing: border-box;
-  font-size: small;
-  line-height: 1.4em;
-}
-
+/* style changes for large screen sizes */
 @media only screen and (min-width: 966px) {
   .aside_content {
     float: right;
