@@ -12,6 +12,22 @@
   src: url(../resources/fonts/OleoScript-Bold.ttf);
   font-weight: bold;
 }
+/* for smooth scrolling for menu floater */
+html {
+  scroll-behavior: smooth;
+}
+
+.mobile {
+display: inline;
+}
+
+.tablet {
+display: none;
+}
+
+.desktop {
+display: none;
+}
 /* general styles for body content */
 body {
 font-family: ContentFont;
@@ -31,6 +47,8 @@ padding: 1em 2em;
 #profile_links {
 clear: both;
 text-align: center;
+background-color: #fff;
+padding: 0.1em 0em;
 }
 
 #profile_links ul {
@@ -47,6 +65,8 @@ margin: auto;
 #navigation_links {
 clear: both;
 text-align: center;
+background-color: #fff;
+padding: 0.1em 0em;
 }
 
 #navigation_links ul {
@@ -69,6 +89,7 @@ letter-spacing: 0.1em;
 }
 /* footer styling */
 footer {
+clear: both;
 font-family: HeaderFont;
 font-size: 16px;
 line-height: 1.58;
@@ -78,12 +99,59 @@ color: white;
 padding: 0.5em 1em;
 font-size: small;
 }
+
+#fixed {
+  bottom: 0;
+  right: 2em;
+  background-color: grey;
+  position: fixed;
+  padding: 0.5em 1em;
+  font-size: small;
+  opacity: 50%;
+}
+
+#fixed a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* color scheme for specific posts */
+
+.featured {
+  background-color: lightskyblue;
+  opacity: 40%;
+  padding: 0.5em;
+}
+
+.pinned {
+  background-color: greenyellow;
+  opacity: 40%;
+  padding: 0.5em;
+}
+
+.latest {
+  background-color: pink;
+  opacity: 40%;
+  padding: 0.5em;
+}
 /* media query for desktop site */
 @media only screen and (min-width: 966px) {
+  .mobile {
+    display: none;
+    }
+    
+  .tablet {
+    display: none;
+    }
+    
+  .desktop {
+    display: inline;
+    }
   /* made header sticky */
   #stickyheader {
     position: sticky;
     top: 0;
+    z-index: 1;
   }
   /* changed header style */
   header {

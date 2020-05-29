@@ -5,9 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chetan's Blog</title>
   <link rel="stylesheet" href="./css/pagetemplatestyle.css">
+  <link rel="stylesheet" href="./css/poststyle.css">
   <link rel="stylesheet" href="./css/homepagestyle.css">
 </head>
 <body>
-  
+  <div id="stickyheader">
+    <header>
+      <h1>Hi! I'm Chetan Singh.</h1>
+    </header>
+    <nav id="profile_links">
+      <ul>
+        <li><a href="https://facebook.com/profile.php?id=100045268033823"><img src="./resources/logos/facebook.png" alt="Facebook Profile" id="facebook"></a></li>
+        <li><a href="https://github.com/chetansinghid"><img src="./resources/logos/github.png" alt="Github Profile" id="github"></a></li>
+        <li><a href="https://www.linkedin.com/in/chetansinghid/"><img src="./resources/logos/linkedin.png" alt="LinkedIn Profile" id="linkedin"></a></li>
+      </ul>
+    </nav>
+    <nav id="navigation_links">
+      <ul>
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="aboutme.html" id="aboutme">About Me</a></li>
+        <li><a href="blog.html" id="blog">Blog</a></li>
+        <li><a href="contactme.html" id="contactme">Contact Me</a></li>
+      </ul>  
+    </nav>
+  </div>
+  <main>
+    <div class="main_content">
+      <div class="post">
+        <div class="featured"></div>
+        <div class="header">
+          <img src="./resources/images/featured.jpg" alt="Featured Post Thumbnail">
+        </div>
+        <div class="post_content">
+          <h2>What are the trending programming languages this month? (ft. StackOverflow)</h2>
+          <p">In this post we look at the programming language trends and other
+             interesting details, according to the recent developer survey by StackOverflow.</p>
+        </div>
+        <div class="read_more">
+          <a href="office-culture.html#main_content">Read More</a>
+        </div>
+      </div>
+      <div class="post">
+        <div class="pinned"></div>
+        <div class="header">
+          <img src="./resources/images/pinned.jpg" alt="Pinned Post Thumbnail">
+        </div>
+        <div class="post_content">
+          <h2>New to this blog? You need to read this first.</h2>
+          <p>This is a post intended to serve as a guide for newcomers to this blog.
+            Some basic tips and suggestions are mentioned along with few interesting details!
+          </p>
+        </div>
+        <div class="read_more">
+          <a href="new-to-blog.html#main_content">Read More</a>
+        </div>
+      </div>
+      <div class="post">
+        <div class="latest"></div>
+        <div class="header">
+          <img src="./resources/images/latest.jpg" alt="Latest Post Thumbnail">
+        </div>
+        <div class="post_content">
+          <h2>Are we nearing the end of office culture?</h2>
+          <p>With the recent developments in light of coronavirus, are we going to see
+            changes in our fundamental perceptions regarding office and office life?
+          </p>
+        </div>
+        <div class="read_more">
+          <a href="office-culture.html#main_content">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="aside_content">
+      <aside>
+        <p><i>Hi! I am Chetan. This Blog is maintained by me for the sole purpose of
+          sharing my knowledge about coding and my thoughts, with the world. Usually,
+          I post about the projects I am working on and the things going on with me.
+          Feel free to browse my blog to see if something catches your eye!</i><br/>
+        <br /><strong>Quick tip</strong> for starters<br />
+        <div class="featured">Blue</div> for featured posts<br/>
+        <div class="pinned">Green</div> for pinned posts<br/>
+        <div class="latest">Pink</div> for latest post<br/>
+        
+        </p>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <p>All Rights Reserved.<br />&copy;Copyright Chetan Singh
+    </p>
+  </footer>
+  <div id="fixed" class="mobile">
+    <a href="#navigation_links">Menu</a>
+  </div>
 </body>
 </html>
