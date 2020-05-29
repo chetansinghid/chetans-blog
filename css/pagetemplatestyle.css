@@ -33,6 +33,7 @@ body {
 font-family: ContentFont;
 margin: 0;
 align-content: center;
+overflow-x: hidden;
 }
 /* header styles */
 header {
@@ -120,19 +121,16 @@ font-size: small;
 
 .featured {
   background-color: lightskyblue;
-  opacity: 40%;
   padding: 0.5em;
 }
 
 .pinned {
   background-color: greenyellow;
-  opacity: 40%;
   padding: 0.5em;
 }
 
 .latest {
   background-color: pink;
-  opacity: 40%;
   padding: 0.5em;
 }
 /* style for buttons on site */
@@ -168,6 +166,19 @@ font-size: small;
   font-weight: bolder;
 }
 
+@media only screen and (min-width: 500px) {
+  .mobile {
+    display: inline;
+    }
+    
+    .tablet {
+    display: inline;
+    }
+    
+    .desktop {
+    display: none;
+    }
+}
 /* media query for desktop site */
 @media only screen and (min-width: 966px) {
   .mobile {
@@ -175,7 +186,7 @@ font-size: small;
     }
     
   .tablet {
-    display: none;
+    display: inline;
     }
     
   .desktop {

@@ -13,6 +13,11 @@
 .main_content {
   max-width: 100%;
 }
+
+.main_content a {
+  text-decoration: none;
+  overflow-x: hidden;
+}
 /* table styles */
 .main_content table {
   table-layout: auto;
@@ -31,6 +36,34 @@
   background-color: lightgray;
 }
 
+#puzzle table {
+  background-color: yellow;
+  /* empty-cells: initial; */
+}
+
+#puzzle tr:nth-child(1) {
+  background-color: lightblue;
+}
+
+#puzzle tr:nth-child(2) {
+  background-color: orange;
+}
+
+#puzzle tr:nth-child(3) {
+  background-color: greenyellow;
+}
+
+#puzzle td {
+  border: 0.1em solid black;
+}
+
+#puzzle td:nth-child(2) {
+  background-color: lightcoral;
+}
+
+.aside_content form{
+  padding: 1em;
+}
 /* style changes for large screen sizes */
 @media only screen and (min-width: 966px) {
   .aside_content {

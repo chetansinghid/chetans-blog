@@ -6,7 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/pagetemplatestyle.css">
   <link rel="stylesheet" href="./css/poststyle.css">
-  <link rel="stylesheet" href="./css/contentstyle.css">
+  <link rel="stylesheet" href="./css/content.css">
 </head>
 <body>
   <!-- sticky header div for larger screen size -->
@@ -36,61 +36,66 @@
   <main>
     <!-- main content of the site -->
     <div class="main_content">
-      <h2>What I can tell you about myself</h2>
+      <div class="post">
+        <h2>What I can tell you about myself</h2>
       <p>I am a student of Mobile Application Design and Development at Lambton College, Toronto.
         I am a practitioner of <a href="https://wemeditate.co">Sahaja Yoga</a> and I have been meditating since
         past 5 years. I like playing chess, reading books and write sometimes. I like to see nature and often get
         out for walks.<br /><br />
-        I know few languages and like to learn new languages. Languages I know with proficiency level;
-        <!-- table for describing language proficiency -->
-        <table>
-          <tr>
-            <th>Language</th>
-            <th>Speak</th>
-            <th>Read</th>
-            <th>Write</th>
-          </tr>
-          <tr>
-            <td>Hindi</td>
-            <td>Fluent</td>
-            <td>Fluent</td>
-            <td>Fluent</td>
-          </tr>
-          <tr>
-            <td>English</td>
-            <td>Proficient</td>
-            <td>Proficient</td>
-            <td>Proficient</td>
-          </tr>
-          <tr>
-            <td>Punjabi</td>
-            <td>Proficient</td>
-            <td>Proficient</td>
-            <td>Proficient</td>
-          </tr>
-          <tr>
-            <td>Marathi</td>
-            <td>Beginner</td>
-            <td>Beginner</td>
-            <td>Beginner</td>
-          </tr>
-        </table>
+        <!-- this table to be only shown on tablets and above -->
+        <div class="tablet">
+          I know few languages and like to learn new languages. Languages I know with proficiency level;
+          <!-- table for describing language proficiency -->
+          <table>
+            <tr>
+              <th>Language</th>
+              <th>Speak</th>
+              <th>Read</th>
+              <th>Write</th>
+            </tr>
+            <tr>
+              <td>Hindi</td>
+              <td>Fluent</td>
+              <td>Fluent</td>
+              <td>Fluent</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Proficient</td>
+              <td>Proficient</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>Punjabi</td>
+              <td>Proficient</td>
+              <td>Proficient</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>Marathi</td>
+              <td>Beginner</td>
+              <td>Beginner</td>
+              <td>Beginner</td>
+            </tr>
+          </table>
+        </div>
         Oh BTW, I also am a programmer and have done my Bachelors at Delhi Technological University,
-        Delhi. I also have three years of work experience, and my last stint was with Dell International
+        India. I also have three years of work experience, and my last stint was with Dell International
         Services Pvt LTD.
       </p>
+      </div>
     </div>
     <!-- aside content for the about me page -->
     <div class="aside_content">
       <aside>
         <div class="mypic">
-          <img src="./resources/images/pinned.jpg" alt="My photo">
-          <h4>It's Me!</h4>
+          <img src="./resources/images/myphoto.jpg" alt="My photo">
+          <h3>It's Me!</h3>
         </div>
         <!-- ordered list -->
         <div class="aside_body">
           <p>
-            The programming languages I know, in decreasing order of comfort are;
+            The programming languages I know, in decreasing order of familarity are;
             <ol>
               <li>JavaScript</li>
               <li>Java</li>
@@ -98,14 +103,12 @@
               <li>Python</li>
               <li>Swift</li>
             </ol><br />
-            <a href="./index.html">Here's</a> the link to homepage.
+            <strong>Did you Know? </strong><a href="./index.html">Here's</a> the link to homepage.
           </p>
         </div>
       </aside>
     </div>
-
   </main>
-  <!-- aside content of the home page -->
   <footer>
     <p>All Rights Reserved.<br />&copy;Copyright Chetan Singh
     </p>
