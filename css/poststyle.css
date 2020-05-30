@@ -6,9 +6,43 @@
   margin: 2em 1em;
 }
 
+.code {
+  padding: 0.2em;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+  display: inline;
+}
+
+.video {
+  margin: 2em auto;
+  text-align: center;
+}
+
+.video iframe {
+  max-width: 100%;
+}
+
+.post audio {
+  width: 100%;
+  margin: 1em auto;
+}
+
 .header {
   margin: 0.5em;
   max-width: 100%;
+}
+
+.post_image {
+  margin: 0.5em;
+}
+
+.post_image img {
+  max-width: 100%;
+}
+
+.header h3 {
+  font-style: italic;
 }
 
 .header img {
@@ -19,9 +53,12 @@
 
 .post_content {
   padding: 0.5em;
+  border-top: yellow;
+  border-top-width: 0.5em;
+  border-top-style: solid;
 }
 
-/* border added for the images for larger width screens */
+/* border added for post images for larger width screens */
 @media only screen and (min-width : 385px) {
   .header img {
     border: 0.1em dashed black;

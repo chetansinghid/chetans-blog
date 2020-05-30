@@ -37,31 +37,35 @@
     <!-- main content of the site -->
     <div class="main_content">
       <div class="post">
-        <div class="pinned"></div>
+        <div class="general"></div>
         <div class="header">
-          <h2>New to this Blog? Howdy!</h2>
-          <h3>Ofcourse newcomers get a post. After all we gotta set home rules, right.</h3>
+          <h2>Do you know what is a JavaScript Event Loop?</h2>
+          <h3>This term has haunted so many developers, but is a really important concept of JavaScript.</h3>
         </div>
         <div class="post_content">
-        <p>
-          If and when you return to your office after the novel coronavirus pandemic, you’ll probably notice some differences.
-        </p>
-        <p>
-          Upon entering your building, the doors may open automatically so you don’t have to touch the handles. Before you board your elevator, you might tell the elevator where you’d like to go, rather than pressing the many buttons within the elevator. When you reach your floor, you could walk into a room full of dividers and well-spaced desks instead of the crowded open floor plan you’re used to. In common areas like meeting rooms and kitchens, expect to see fewer chairs and posted documentation of the last time they were cleaned.
-        </p>
-        <p>
-          Of course, this is all assuming you go back to your old office at all. As the coronavirus takes a steep toll on the economy and the workforce, many won’t have jobs to go back to. Some who are still employed will now permanently work from home, and some employers will choose to downsize their leases or look for flexible office space rather than long-term leases. Coworking spaces will probably never be what they once were as they forgo hot desks and communal spaces for more sanitary — and less profitable — private areas.
-        </p>
-        <p>
-          Many of these adjustments in office design are actually just accelerations of real estate trends that existed well before the pandemic. But just as policies around telehealth have quickly shifted, the Covid-19 crisis will force swift and permanent changes in both commercial real estate and work culture itself. The office as we know it will never be the same.
-        </p>
+          <p>
+            The event loop got its name because of how it's usually implemented, which usually resembles:<br/>
+            <div class="code">while (queue.waitForMessage()) {<br />
+              queue.processNextMessage()<br />
+            }</div> <br/>
+          <div class="code">queue.waitForMessage()</div> waits synchronously for a message to arrive (if one is not already available and waiting to be handled).
+          <br /><br />Here's a great video explaining the event loop.
+          </p>
+          <!-- video with iframe -->
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/XzXIMZMN9k4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>
+            Hope this clears a few things. I excpect that now you will be able to code your JavaScript with more
+            clarity and understanding.
+          </p>
         </div>
       </div>
-    </div>
+      </div>
     <!-- aside content of the page -->
     <div class="aside_content">
       <div class="banner">
-        <img src="../resources/images/latest.jpg" alt="Post Thumbnail">
+        <img src="../resources/images/general.jpg" alt="Post Thumbnail">
       </div>
       <div class="aside_body">
         <h3>These are my favorite resources for JS and HTML</h3>
@@ -80,7 +84,7 @@
           <ul>
             <li><a href="./trending-programming-languages.html">What are the trending programming languages this month?</a></li>
             <li><a href="./new-to-blog.html">New to this blog? You need to read this first.</a></li>
-            <li><a href="./javascript-event-loop.html">Do you know what is a JavaScript Event Loop?</a></li>
+            <li><a href="./office-culture.html">Are we nearing the end of office culture?</a></li>
           </ul>
         </p>
         <p>

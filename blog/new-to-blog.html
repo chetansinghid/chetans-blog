@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/pagetemplatestyle.css">
+  <link rel="stylesheet" href="../css/poststyle.css">
+  <link rel="stylesheet" href="../css/content.css">
+</head>
+<body>
+  <!-- sticky header div for larger screen size -->
+  <div id="stickyheader">
+    <header>
+      <h1>Hi! I'm Chetan Singh.</h1>
+    </header>
+    <!-- profile links bar -->
+    <nav id="profile_links">
+      <ul>
+        <li><a href="https://facebook.com/profile.php?id=100045268033823"><img src="../resources/logos/facebook.png" alt="Facebook Profile" id="facebook"></a></li>
+        <li><a href="https://github.com/chetansinghid"><img src="../resources/logos/github.png" alt="Github Profile" id="github"></a></li>
+        <li><a href="https://www.linkedin.com/in/chetansinghid/"><img src="../resources/logos/linkedin.png" alt="LinkedIn Profile" id="linkedin"></a></li>
+      </ul>
+    </nav>
+    <!-- navigation link bar for the site -->
+    <nav id="navigation_links">
+      <ul>
+        <li><a href="../index.html" id="home">Home</a></li>
+        <li><a href="../aboutme.html" id="aboutme">About Me</a></li>
+        <li><a href="../blog.html" id="blog">Blog</a></li>
+        <li><a href="../contactme.html" id="contactme">Contact Me</a></li>
+      </ul>  
+    </nav>
+  </div>
+  <!-- site body -->
+  <main>
+    <!-- main content of the site -->
+    <div class="main_content">
+        <div class="post">
+          <div class="pinned"></div>
+          <div class="header">
+            <h2>New to this Blog? Howdy!</h2>
+            <h3>Ofcourse newcomers get a post. After all we gotta set home rules, right.</h3>
+          </div>
+          <div class="post_content">
+            <p>
+              Welcome to this blog. I have created this blog for the sole purpose of sharing my knowledge about coding and my thoughts, with the world. Usually, I post about the projects I am working on and the things going on with me.
+            </p>
+            <p>The blog rules are simple. Blogs are color marked for easy identifying. Blue for featured, green for pinned and pink for latest. The rest are general posts which are well also marked. You'll see their color when you encounter one.</p>
+            <p>
+              Now then go and explore! Before you leave here's somethng for you.<br />
+            </p>
+            <!-- audio file -->
+            <audio controls>
+              <source src="../resources/files/hello.mp3" type="audio/mp3">
+              <source src="../resources/files/hello.wav" type="audio/wav">
+              Your browser does not support audio files.
+            </audio>
+          </div>
+        </div>
+    </div>
+    <!-- aside content of the page -->
+    <div class="aside_content">
+      <div class="banner">
+        <img src="../resources/images/pinned.jpg" alt="Post Thumbnail">
+      </div>
+      <div class="aside_body">
+        <h3>These are my favorite resources for JS and HTML</h3>
+        <p>
+          <ul>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="../resources/logos/js.png" alt="JavaScript Logo"></a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"><img src="../resources/logos/html.png" alt="HTML Logo"></a>
+            </li>
+          </ul>
+          </p>
+        <h3>Other Blog posts</h3>
+        <p>
+          <ul>
+            <li><a href="./trending-programming-languages.html">What are the trending programming languages this month?</a></li>
+            <li><a href="./office-culture.html">Are we nearing the end of office culture?</a></li>
+            <li><a href="./javascript-event-loop.html">Do you know what is a JavaScript Event Loop?</a></li>
+          </ul>
+        </p>
+        <p>
+          <br />Yeah, you guessed it. <a href="../index.html">Link</a> to homepage.
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>All Rights Reserved.<br />&copy;Copyright Chetan Singh
+    </p>
+  </footer>
+  <!-- sticky button for reference to navigation bar -->
+  <div id="fixed" class="mobile">
+    <a href="#navigation_links">Menu</a>
+  </div>
+</body>
+</html>

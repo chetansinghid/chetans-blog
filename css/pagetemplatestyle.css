@@ -171,6 +171,11 @@ font-size: small;
 
 .aside_content ul {
   list-style: square;
+  padding: 0.5em;
+}
+
+.aside_content li {
+  padding: 0.3em 0em;
 }
 
 .aside_content a {
