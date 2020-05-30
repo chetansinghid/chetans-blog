@@ -18,3 +18,4 @@ My blog website created for assignment
 <li>external and image links
 
 You can check the site live here.
+https://chetansinghid.github.io/myBlog-chetan-c0772216/
